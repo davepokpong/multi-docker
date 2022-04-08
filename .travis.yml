@@ -15,6 +15,6 @@ after_success:
   - docker build -t davepokpong/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push davepokpong/multi-client
-  - docker push davepokpong/multi-nignx
+  - docker push davepokpong/multi-nginx
   - docker push davepokpong/multi-server
   - docker push davepokpong/multi-worker
